@@ -6,14 +6,14 @@
 //
 
 import UIKit
+import KakaoMapsSDK
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
-
+    private let apiKey = "1faeb9634260d4c49830afe1e03e519f"
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        SDKInitializer.InitSDK(appKey: apiKey)
         return true
     }
 
